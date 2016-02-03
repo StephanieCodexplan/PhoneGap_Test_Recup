@@ -39,6 +39,19 @@ function clearCache(){
 
 // Initialise la structure de connexion pour une future détection
 function initVarConnection(){
+	
+	if (typeof states != "undefined") {
+	alert("states : la variable existe")
+	} else {
+	alert("states : la variable n'existe pas")
+	}
+	
+	if (typeof Connection != "undefined") {
+	alert("Connection : la variable existe")
+	} else {
+	alert("Connection : la variable n'existe pas")
+	}
+	
 	states[Connection.UNKNOWN]  = 'Unknown connection';
 	states[Connection.ETHERNET] = 'Ethernet connection';
 	states[Connection.WIFI]     = 'WiFi connection';
